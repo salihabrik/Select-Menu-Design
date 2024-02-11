@@ -12,10 +12,10 @@
     <div class="hero">
         <div class="selector">
         <div id="selectField">
-            <p>Select Social Media</p>
-            <img src="images/arrow.png">
+            <p id="selectText">Select Social Media</p>
+            <img src="images/arrow.png" id="arrowIcon">
         </div>
-        <ul id="list">
+        <ul id="list" class="hide">
             <li class="options">
                 <img src="images/facebook.png">
                 <p>Facebook</P>
@@ -32,6 +32,21 @@
                 <img src="images/instagram.png">
                 <p>Instagram</P>
             </li>
+            <li class="options">
+                <img src="images/twitter.png">
+                <p>Twitter</P>
+            </li>
+            <li class="options">
+                <img src="images/whatsapp.png">
+                <p>Whatsapp</P>
+            </li>
+
+
+            
+
+
+            
+
             
             
             
@@ -40,18 +55,34 @@
     </div>
 
 
-                    
-                </body>
-                </html>
-                </li>
-            
-                
-                
-            
-        </div>
-    </div>
+<script>
+
+    var selectField = document.getElementById('selectField');
+    var selectText = document.getElementById('selectText');
+    var options = document.getElementsByClassName('options');
+    var list = document.getElementById('list');
+    var arrowIcon  = document.getElementById('arrowIcon');
+
+    selectField.addEventListener('click', function() {
+        list.classList.toggle('hide');
+        arrowIcon.classList.toggle('rotate');
+    });
 
 
+    for(option of options) {
+        option.addEventListener('click', function() {
+            selectText.innerHTML = this.querySelector('p').innerHTML;
+            list.classList.toggle('hide');
+            arrowIcon.classList.toggle('rotate');
+        
+        }
+        
+        );
+    
+    }
+
+
+</script>
     
 </body>
 </html>

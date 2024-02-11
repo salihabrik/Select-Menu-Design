@@ -33,6 +33,7 @@
 
 #selectField img {
     width: 12px;
+    transition: all 0.3s ease;
 
 }
 #list{
@@ -62,4 +63,19 @@
 
 }
 
-.options hover
+.options:hover{
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.hide{
+    visibility: hidden; 
+
+    
+}
+
+.rotate {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    
+}
