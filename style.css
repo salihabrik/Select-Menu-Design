@@ -77,5 +77,20 @@
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
-    
+
 }
+
+/* footer for me*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(#f44386, #730288);
+    color: #fff;
+    font-size: 20px;
+}
+```
+```html
